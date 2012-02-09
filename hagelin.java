@@ -11,7 +11,7 @@ public class hagelin {
 			for(int j = 0; j < pins[i].length; j++) 
 				pins[i][j] = r.nextInt(1000) % 2;
 		}
-		String h = "hahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha";
+		String h = "hahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha";
 		h = h.toUpperCase();
 		System.out.println(h);
 		for(int i = 0; i < h.length(); i++) {
