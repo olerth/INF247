@@ -2,7 +2,7 @@ public class walsh {
 	public static void main(String[] args) {
 		int L = 4;
 		int[] out = {0,1,0,1,0,1,1,0,0,1,0,1,1,0,1,0};
-		//int[] out = {0,1,1,0,0,0,1,0,1,1,1,0};
+		//int[] out = {0,1,1,0,0,0,1,0,1,1,1,0}; //This is totally crazy
 		//int[] out = {0,0,1,1,1,0,0,1};
 		double[] w = w(out);
 		w = max(w);
