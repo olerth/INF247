@@ -1,6 +1,7 @@
 public class berlekamp {
 	public static void main(String[] args) {
 		int lfsr[] = {1,1,1,0,0,1,1}; //Initializing LFSR with non-zero initial state
+		
 		int next = 0;
 		int[] pure = new int[60];
 		int[] filter = new int[60];

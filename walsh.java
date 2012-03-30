@@ -1,13 +1,15 @@
 public class walsh {
 	public static void main(String[] args) {
 		int L = 4;
-		int[] out = {0,1,0,1,0,1,1,0,0,1,0,1,1,0,1,0};
+//		int[] out = {0,1,0,1,0,1,1,0,0,1,0,1,1,0,1,0};
+		int[] out = {0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0};
 		//int[] out = {0,1,1,0,0,0,1,0,1,1,1,0};
 		//int[] out = {0,0,1,1,1,0,0,1};
 		double[] w = w(out);
 		w = max(w);
 		double p = prob(w);
 		double q = 1-p;
+		System.out.println(out.length);
 		System.out.println("Best linear / affine function");
 		prob2func(w);
 		System.out.println("\nprobability "+p);

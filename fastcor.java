@@ -5,7 +5,8 @@ public class fastcor {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int[] x = {0,1,1,0,0,0,1,0,1,1,1,0};
+		int lfsr[] = new int[31];
+		int ks[] = {0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1,0, 0, 1, 0, 0, 1, 1, 1, 0, 1};
 		double p = 0.75;
 		int t = 2;
 		double p2 = p(t,p,4,4);
@@ -22,5 +23,13 @@ public class fastcor {
 	static double s(int t, double p) {
 		if(t == 1) return p;
 		else return p*s(t-1,p)+(1-p)*(1-s(t-1,p));
+	}
+	
+	static boolean f(boolean x1, boolean x2, boolean x3, boolean x4, boolean x5) {
+		return (x1&x2) ^ x3 ^ x4 ^ x5 ;
+	}
+	
+	static boolean g(boolean x1, boolean x2, boolean x3) {
+		return x1^x2^x3;
 	}
 }
